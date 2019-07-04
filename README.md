@@ -1,7 +1,7 @@
 # Vagrant AWS Provider
 
-[![Build Status](https://travis-ci.org/iam-decoder/vagrant-aws.svg?branch=iam-decoder)](https://travis-ci.org/iam-decoder/vagrant-aws)
-[![Gem Version](https://badge.fury.io/rb/vagrant-aws-iam-decoder.svg)](https://badge.fury.io/rb/vagrant-aws-iam-decoder)
+<!-- [![Build Status](https://travis-ci.org/iam-decoder/vagrant-aws.svg?branch=iam-decoder)](https://travis-ci.org/iam-decoder/vagrant-aws) -->
+<!-- [![Gem Version](https://badge.fury.io/rb/vagrant-aws-iam-decoder.svg)](https://badge.fury.io/rb/vagrant-aws-iam-decoder) -->
 
 This is a [Vagrant](http://www.vagrantup.com) 1.2+ plugin that adds an [AWS](http://aws.amazon.com)
 provider to Vagrant, allowing Vagrant to control and provision machines in
@@ -27,7 +27,7 @@ installing, `vagrant up` and specify the `aws` provider. An example is
 shown below.
 
 ```
-$ vagrant plugin install vagrant-aws-iam-decoder
+$ vagrant plugin install vagrant-aws
 ...
 $ vagrant up --provider=aws
 ...
