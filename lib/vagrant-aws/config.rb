@@ -361,6 +361,8 @@ module VagrantPlugins
           @aws_profile = ENV['AWS_PROFILE'] if ENV['AWS_PROFILE']
           @aws_profile = 'default' if @aws_profile == UNSET_VALUE
           @aws_dir = ENV['HOME'].to_s + '/.aws/' if @aws_dir == UNSET_VALUE
+          @aws_region, @access_key_id, @secret_access_key, @session_token = Credentials.new.get_aws_info(@aws_profile, @aws_dir)
+          @region = @aws_region if @region == UNSET_VALUE and !@aws_region.nil?
         elsif @use_iam_profile != UNSET_VALUE
         else
           @aws_profile = nil
